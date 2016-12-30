@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#showUser" prefHeight="620.0" prefWidth="800.0" stylesheets="@../styles/home.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+    <children>
+        <AnchorPane fx:id="homeA2" layoutX="25.0" layoutY="76.0" onMouseEntered="#updatePrice" prefHeight="500.0" prefWidth="750.0" stylesheets="@../styles/home.css" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="76.0">
+         <children>
+            <TextField fx:id="cname" layoutX="212.0" layoutY="30.0" prefHeight="25.0" prefWidth="350.0" promptText="Enter Card Holder's Name" stylesheets="@../styles/home.css" />
+            <TextField fx:id="mob" layoutX="212.0" layoutY="80.0" prefHeight="25.0" prefWidth="350.0" promptText="Enter Mobile Number" stylesheets="@../styles/home.css" />
+            <TextField fx:id="address" layoutX="212.0" layoutY="130.0" prefWidth="350.0" promptText="Enter Delivery Address" stylesheets="@../styles/home.css" />
+            <TextField fx:id="cno" layoutX="212.0" layoutY="180.0" prefWidth="350.0" promptText="Enter Card Number" stylesheets="@../styles/home.css" />
+            <DatePicker fx:id="edate" layoutX="212.0" layoutY="230.0" maxWidth="350.0" prefWidth="350.0" promptText="Enter Expiry Date" stylesheets="@../styles/home.css" />
+            <PasswordField fx:id="cvv" layoutX="212.0" layoutY="280.0" prefWidth="350.0" promptText="Enter 3 digit CVV number" stylesheets="@../styles/home.css" />
+            <PasswordField fx:id="pin" layoutX="212.0" layoutY="330.0" prefWidth="350.0" promptText="Enter ATM Pin" stylesheets="@../styles/home.css" />
+            <Button fx:id="paybtn" layoutX="471.0" layoutY="380.0" mnemonicParsing="false" onAction="#payment" prefHeight="25.0" prefWidth="89.0" stylesheets="@../styles/home.css" text="Pay" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Button>
+            <Label fx:id="status" contentDisplay="CENTER" layoutX="212.0" layoutY="432.0" prefHeight="75.0" prefWidth="350.0" stylesheets="@../styles/home.css" textFill="#00ab56">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="212.0" layoutY="380.0" prefHeight="27.0" prefWidth="84.0" stylesheets="@../styles/home.css" text="Amount : ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="14.0" stylesheets="@../styles/home.css" text="Card Holder's Name" />
+            <Label layoutX="212.0" layoutY="63.0" stylesheets="@../styles/home.css" text="Mobile Number" />
+            <Label layoutX="212.0" layoutY="113.0" stylesheets="@../styles/home.css" text="Delivery Address" />
+            <Label layoutX="212.0" layoutY="163.0" stylesheets="@../styles/home.css" text="Card Number" />
+            <Label layoutX="212.0" layoutY="213.0" stylesheets="@../styles/home.css" text="Expiry Date" />
+            <Label layoutX="212.0" layoutY="265.0" stylesheets="@../styles/home.css" text="CVV Number" />
+            <Label layoutX="212.0" layoutY="313.0" stylesheets="@../styles/home.css" text="ATM Pin" />
+            <Label fx:id="total" layoutX="300.0" layoutY="379.0" prefHeight="27.0" prefWidth="156.0" stylesheets="@../styles/home.css" text="0" textFill="#0014a8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+        </AnchorPane>
+        <Pane fx:id="homeHeader" layoutX="15.0" prefHeight="82.0" prefWidth="770.0" stylesheets="@../styles/home.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="695.0" layoutY="7.0" onMouseClicked="#showUser" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/user.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <Label fx:id="username" layoutX="708.0" layoutY="59.0" onMouseClicked="#showUser" text="User">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <ImageView fx:id="back" fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="16.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/back2.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+            <Label layoutX="272.0" layoutY="24.0" text="Make Payment" textFill="#d00000">
+               <font>
+                  <Font name="Algerian" size="30.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="landingpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="641.0" stylesheets="@../styles/landing.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LandingController">
+   <children>
+      <Button fx:id="btn" layoutX="515.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="110.0" text="Continue" textAlignment="JUSTIFY" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

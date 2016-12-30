@@ -1,0 +1,53 @@
+#loginpane{
+    -fx-background-image: url("../images/loginback.jpg");
+    -fx-background-size: stretch;
+}
+
+#loginBpane{
+    -fx-background-size: 100%;
+}
+
+#topbar{
+    -fx-background-color:rgba(0, 0, 0, 0.5);
+}
+
+#uname{
+
+}
+#uname:focused{
+
+}
+
+#pass{
+}
+
+#loginbtn{
+    -fx-background-color: darkcyan;
+}
+#loginbtn:hover{
+    -fx-background-color: lightseagreen;
+    -fx-cursor: hand;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+    -fx-border-radius: 3%;
+}
+#middlepane{
+    -fx-background-color:rgba(0, 0, 0, 0.5);
+    -fx-border-style: solid;
+    -fx-border-width: 1pt;
+    -fx-border-radius: 5%;
+    -fx-background-radius: 5%;
+}
+
+#regbtn{
+    -fx-background-color: steelblue;
+}
+
+#regbtn:hover{
+    -fx-background-color: dodgerblue;
+    -fx-cursor: hand;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+    -fx-border-radius: 1%;
+}
+

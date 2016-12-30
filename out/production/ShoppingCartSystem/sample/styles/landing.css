@@ -1,0 +1,18 @@
+#landingpane{
+    -fx-background-image: url("../images/shop.jpg");
+    -fx-background-size: stretch;
+}
+
+#btn{
+    -fx-background-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 200%;
+    -fx-background-radius: 38%;
+    -fx-border-radius: 100%;
+    -fx-border-color: white;
+}
+
+#btn:hover{
+    -fx-background-color: goldenrod;
+    -fx-cursor: hand;
+}

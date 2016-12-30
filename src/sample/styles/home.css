@@ -1,0 +1,47 @@
+#homeA2
+{
+    -fx-border-color: darkcyan;
+    -fx-border-style: solid;
+    -fx-border-width: 5px;
+}
+
+#area{
+    -fx-border-color: darkcyan;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+}
+
+#logout{
+    -fx-background-color: white;
+    -fx-text-fill: darkred;
+    -fx-border-style: solid;
+    -fx-border-color: darkred;
+    -fx-font-size: 14px;
+}
+#logout:hover{
+    -fx-background-color: darkred;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+#homeHeader{
+    -fx-border-color: darkcyan;
+    -fx-border-style: solid;
+    -fx-border-width: 5px;
+}
+
+#viewItems:hover{
+    -fx-border-style: solid;
+    -fx-border-color: gold;
+}
+
+#paybtn{
+    -fx-background-color: steelblue;
+}
+
+#paybtn:hover{
+    -fx-background-color: dodgerblue;
+    -fx-cursor: hand;
+    -fx-border-style: solid;
+    -fx-border-color: rgba(0, 0, 0, 0);;
+}
